@@ -9,64 +9,63 @@
     <!-- Estilos adicionales -->
     <style>
         body {
-            background-color: #1e2a3a;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #ecf0f1;
+            background-color: #222831;
+            font-family: 'Arial', sans-serif;
+            color: #f1f1f1;
             padding-top: 50px;
         }
         h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             text-align: center;
-            color: #f39c12;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-            margin-bottom: 40px;
+            color: #00adb5;
+            text-shadow: 2px 2px 10px rgba(0, 173, 181, 0.7);
+            margin-bottom: 50px;
         }
         .alert {
-            background-color: #16a085;
-            color: white;
+            background-color: #393e46;
+            color: #eeeeee;
             font-size: 1.2rem;
-            font-weight: bold;
             padding: 15px;
             margin-bottom: 30px;
-            border-radius: 10px;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
         }
         .list-group-item {
-            border-radius: 12px;
-            background-color: #34495e;
-            border: 1px solid #2c3e50;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #ff5722, #e64a19);
+            color: white;
+            border: none;
             margin-bottom: 15px;
-            padding: 12px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         .list-group-item:hover {
-            background-color: #e74c3c;
-            transform: scale(1.05);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
         }
         .list-group-item a {
             font-size: 1.4rem;
-            color: #ecf0f1;
+            font-weight: bold;
+            color: #ffffff;
             text-decoration: none;
-            transition: color 0.3s ease, transform 0.3s ease;
+            transition: color 0.3s ease, letter-spacing 0.3s ease;
         }
         .list-group-item a:hover {
-            color: #fff;
+            color: #000;
+            letter-spacing: 1px;
             text-decoration: underline;
-            transform: translateX(10px);
         }
         .container {
-            max-width: 700px;
+            max-width: 750px;
             margin: 0 auto;
-            background-color: #34495e;
+            background-color: #393e46;
             padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
-        }
-        .container br {
-            margin-bottom: 15px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
         }
         .btn-link {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
     </style>
 </head>
@@ -75,11 +74,11 @@
 <div class="container">
     <h1>Manejo de Sesiones</h1>
     <ul class="list-group">
-        <li class="list-group-item"><a href="/carro_compras/productos" class="btn btn-link">Ver Menu</a></li>
-        <li class="list-group-item"><a href="/carro_compras/login.html" class="btn btn-link">Login</a></li>
-        <li class="list-group-item"><a href="/carro_compras/categoria" class="btn btn-link">Ver Pedidos en Linea</a></li>
-        <li class="list-group-item"><a href="/carro_compras/ver-carro" class="btn btn-link">Ver Carro</a></li>
-        <li class="list-group-item"><a href="/carro_compras/logout" class="btn btn-link">Cerrar sesion</a></li>
+        <li class="list-group-item"><a href="/carro_compras/productos" class="btn btn-link">Ver Menú</a></li>
+        <li class="list-group-item"><a href="/carro_compras/login.jsp" class="btn btn-link">Iniciar Sesión</a></li>
+        <li class="list-group-item"><a href="/carro_compras/categoria" class="btn btn-link">Ver Pedidos en Línea</a></li>
+        <li class="list-group-item"><a href="/carro_compras/ver-carro" class="btn btn-link">Ver Carrito</a></li>
+        <li class="list-group-item"><a href="/carro_compras/logout" class="btn btn-link">Volver a la Página de Inicio</a></li>
 
     </ul>
 </div>

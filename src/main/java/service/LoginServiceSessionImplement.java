@@ -2,6 +2,7 @@ package service;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
+import models.Rol;
 
 import java.util.Optional;
 
@@ -21,5 +22,10 @@ public class LoginServiceSessionImplement implements LoginService{
             return Optional.of(username);
         }
         return Optional.empty();
+    }
+
+    @Override
+    public Rol verifyUser(String username, String password) {
+        return null;
     }
 }
